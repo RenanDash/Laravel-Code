@@ -16,6 +16,7 @@ use Ramsey\Uuid\Type\Integer;
 
 Route::get('/sobrenos', 'SobreNosController@SobreNos')->name('site.sobrenos');
 Route::get('/contato', 'ContatoController@FunctionName')->name('site.contato');
+Route::post('/contato', 'ContatoController@FunctionName')->name('site.contato');
 Route::get('/', 'PrincipalController@Principal')->name('site.index');
 Route::get('/login', function () {
     return 'login';
